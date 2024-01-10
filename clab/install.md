@@ -1,3 +1,5 @@
+### install log
+```bash
 junenu@lucifer:~$ sudo bash -c "$(curl -sL https://get.containerlab.dev)"
 [sudo] password for junenu:
 Downloading https://github.com/srl-labs/containerlab/releases/download/v0.49.0/containerlab_0.49.0_linux_amd64.deb
@@ -30,3 +32,4 @@ junenu@lucifer:~$ clab version
        date: 2023-12-21T12:51:25Z
      source: https://github.com/srl-labs/containerlab
  rel. notes: https://containerlab.dev/rn/0.49/
+```
