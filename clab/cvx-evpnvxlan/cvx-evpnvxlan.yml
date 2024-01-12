@@ -1,0 +1,52 @@
+name: ip_fabric_lab
+
+topology:
+  nodes:
+    s1:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    s2:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    l1:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    l2:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    l3:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    l4:
+      kind: cvx
+      image: networkop/cx:4.4.0
+      runtime: docker
+    sv11:
+      kind: linux
+      image: quay.io/frrouting/frr:8.5.1
+      binds:
+        - init_configs/sv11/daemons:/etc/frr/daemons
+    sv21:
+      kind: linux
+      image: quay.io/frrouting/frr:8.5.1
+      binds:
+        - init_configs/sv21/daemons:/etc/frr/daemons
+
+  links:
+    - endpoints: ["s1:swp1", "l1:swp53"]
+    - endpoints: ["s2:swp1", "l1:swp54"]
+    - endpoints: ["s1:swp2", "l2:swp53"]
+    - endpoints: ["s2:swp2", "l2:swp54"]
+    - endpoints: ["s1:swp3", "l3:swp53"]
+    - endpoints: ["s2:swp3", "l3:swp54"]
+    - endpoints: ["s1:swp4", "l4:swp53"]
+    - endpoints: ["s2:swp4", "l4:swp54"]
+    - endpoints: ["l1:swp1", "sv11:eth1"]
+    - endpoints: ["l2:swp1", "sv11:eth2"]
+    - endpoints: ["l3:swp1", "sv21:eth1"]
+    - endpoints: ["l4:swp1", "sv21:eth2"]
