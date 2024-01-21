@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-0a8039aefcf8",
+        "bridge": "br-db385c45d9ac",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "2001:172:20:20::/64",
@@ -28,13 +28,13 @@
       "image": "praqma/network-multitool:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::5",
+      "mgmt-ipv6-address": "2001:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/PC1",
@@ -81,13 +81,13 @@
       "image": "praqma/network-multitool:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::6",
+      "mgmt-ipv6-address": "2001:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/PC2",
@@ -100,18 +100,6 @@
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 11443,
-          "protocol": "tcp"
-        },
-        {
-          "host-ip": "",
-          "host-port": 0,
-          "port": 1180,
-          "protocol": "tcp"
-        },
-        {
-          "host-ip": "",
-          "host-port": 0,
           "port": 443,
           "protocol": "tcp"
         },
@@ -119,6 +107,18 @@
           "host-ip": "",
           "host-port": 0,
           "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
           "protocol": "tcp"
         }
       ]
@@ -134,13 +134,13 @@
       "image": "praqma/network-multitool:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.7",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::3",
+      "mgmt-ipv6-address": "2001:172:20:20::7",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/PC3",
@@ -153,18 +153,6 @@
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 443,
-          "protocol": "tcp"
-        },
-        {
-          "host-ip": "",
-          "host-port": 0,
-          "port": 80,
-          "protocol": "tcp"
-        },
-        {
-          "host-ip": "",
-          "host-port": 0,
           "port": 11443,
           "protocol": "tcp"
         },
@@ -172,6 +160,18 @@
           "host-ip": "",
           "host-port": 0,
           "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
           "protocol": "tcp"
         }
       ]
@@ -187,13 +187,13 @@
       "image": "frrouting/frr:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.5",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::4",
+      "mgmt-ipv6-address": "2001:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/router1",
@@ -216,13 +216,13 @@
       "image": "frrouting/frr:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.6",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::2",
+      "mgmt-ipv6-address": "2001:172:20:20::6",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/router2",
@@ -245,13 +245,13 @@
       "image": "frrouting/frr:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::7",
+      "mgmt-ipv6-address": "2001:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0a8039aefcf8",
+        "clab-mgmt-net-bridge": "br-db385c45d9ac",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/network-programing/clab/frr-ospfv3/clab-frr-ospfv3/router3",
@@ -269,13 +269,13 @@
       "a": {
         "node": "router1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:d3:1d:70",
+        "mac": "aa:c1:ab:63:9c:a4",
         "peer": "z"
       },
       "z": {
         "node": "router2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:33:9d:8c",
+        "mac": "aa:c1:ab:af:a9:9c",
         "peer": "a"
       }
     },
@@ -283,13 +283,13 @@
       "a": {
         "node": "router1",
         "interface": "eth2",
-        "mac": "aa:c1:ab:91:46:d1",
+        "mac": "aa:c1:ab:4d:fb:de",
         "peer": "z"
       },
       "z": {
         "node": "router3",
         "interface": "eth1",
-        "mac": "aa:c1:ab:af:d8:85",
+        "mac": "aa:c1:ab:e6:0e:8b",
         "peer": "a"
       }
     },
@@ -297,13 +297,13 @@
       "a": {
         "node": "router2",
         "interface": "eth2",
-        "mac": "aa:c1:ab:d7:75:71",
+        "mac": "aa:c1:ab:77:c0:0c",
         "peer": "z"
       },
       "z": {
         "node": "router3",
         "interface": "eth2",
-        "mac": "aa:c1:ab:00:37:ec",
+        "mac": "aa:c1:ab:47:9a:57",
         "peer": "a"
       }
     },
@@ -311,13 +311,13 @@
       "a": {
         "node": "PC1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:99:68:d8",
+        "mac": "aa:c1:ab:06:36:fa",
         "peer": "z"
       },
       "z": {
         "node": "router1",
         "interface": "eth3",
-        "mac": "aa:c1:ab:04:b6:88",
+        "mac": "aa:c1:ab:0a:09:46",
         "peer": "a"
       }
     },
@@ -325,13 +325,13 @@
       "a": {
         "node": "PC2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:ae:6c:02",
+        "mac": "aa:c1:ab:a9:a6:47",
         "peer": "z"
       },
       "z": {
         "node": "router2",
         "interface": "eth3",
-        "mac": "aa:c1:ab:80:4a:88",
+        "mac": "aa:c1:ab:f9:31:a5",
         "peer": "a"
       }
     },
@@ -339,13 +339,13 @@
       "a": {
         "node": "PC3",
         "interface": "eth1",
-        "mac": "aa:c1:ab:58:67:2f",
+        "mac": "aa:c1:ab:23:19:61",
         "peer": "z"
       },
       "z": {
         "node": "router3",
         "interface": "eth3",
-        "mac": "aa:c1:ab:2c:4f:d6",
+        "mac": "aa:c1:ab:5f:3c:db",
         "peer": "a"
       }
     }
